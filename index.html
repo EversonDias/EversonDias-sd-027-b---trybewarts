@@ -5,16 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trybewarts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <title>Trybewarts</title>
 </head>
 
 <body>
-  <header>
-
+  <header class="header">
+    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo" id="">
+    <h1 id="trybewarts-title">Trybewarts</h1>
+    <form action="" method="get" class="btn btn-outline-success trybewarts-login" id="trybe-login">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Senha">
+        <button>Entrar</button>   
+    </form>
   </header>
 
-  <main class="flex-container">
+  <main class="flex">
 
     <form method="get" class="flex-container" id="evaluation-form">
 
@@ -32,7 +39,26 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </section>
-
+    <div>
+      <div>
+        <label for="family" id="label-family">Qual sua família?</label>
+        <input type="radio" name="family" id="family" value="Frontend">
+        <input type="radio" name="family" id="family" value="Backend">
+        <input type="radio" name="family" id="family" value="FullStack">
+      </div>
+      <div>  
+        <label for="subject" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <input type="checkbox" name="" class="subject" id="subject" value="Hofs">
+        <input type="checkbox" name="" class="subject" id="subject" value="Jest">
+        <input type="checkbox" name="" class="subject" id="subject" value="Promises">
+        <input type="checkbox" name="" class="subject" id="subject" value="React">
+        <input type="checkbox" name="" class="subject" id="subject" value="SQL">
+        <input type="checkbox" name="" class="subject" id="subject" value="Python">
+      </div>  
+        <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="" id="agreement">
+        <br>
+        <button type="submit" id="submit-btn">Enviar</button> 
       <label class="textarea">Deixe seu comentário:</label>
       <textarea maxlength="500"></textarea>
 
@@ -55,6 +81,7 @@
     </form>
     <img src="images/trybewarts-colored.svg" alt="logo trybewarts" id="trybewarts-forms-logo">
   </main>
+  <footer>Direitos reservados à Trybewarts©</footer>   
   <script src="script.js"></script>
 </body>
 
