@@ -2,33 +2,40 @@
   display: flex;
   width: 675px;
 }
+
 .flex {
   display: flex;
 }
+
 .header {
   background-color: rgb(50, 167, 145);
-  padding: 5px 5px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
 }
+
 .trybewarts-header-logo {
   width: 60px;
   height: 60px;
   display: flex;
 }
+
 #trybe-login {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer {
   background-color: rgb(77, 176, 103);
   color: black;
   text-align: center;
 }
+
 #email {
   margin-right: 10px;
 }
+
 #password {
   margin-right: 10px;
 }
@@ -45,10 +52,9 @@ footer {
   display: flex;
   margin-right: 300px;
 }
+
 .flexColumns {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-
