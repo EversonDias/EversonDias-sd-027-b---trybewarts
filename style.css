@@ -4,6 +4,7 @@
 }
 .flex {
   display: flex;
+  border: solid 1px black;
 }
 .header {
   background-color: rgb(50, 167, 145);

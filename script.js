@@ -1,3 +1,6 @@
+const checkButton = document.getElementById('agreement');
+const buttonSubmit =  document.getElementById('submit-btn');
+
 function validLogin () {
     const email = document.getElementById('email');
     const password = document.getElementById('password');
@@ -7,3 +10,11 @@ function validLogin () {
         alert = 'Email ou senha inválidos'
     }
 } validLogin ();
+
+checkButton.addEventListener('click', () => {
+ if (checkButton.checked) {
+  buttonSubmit.removeAttribute('disabled')
+ } else {
+  buttonSubmit.setAttribute('disabled', true)
+ };
+})
