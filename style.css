@@ -4,7 +4,6 @@
 }
 .flex {
   display: flex;
-  border: solid 1px black;
 }
 .header {
   background-color: rgb(50, 167, 145);
@@ -38,8 +37,18 @@ footer {
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin: auto;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
+  margin-right: 300px;
 }
+.flexColumns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+

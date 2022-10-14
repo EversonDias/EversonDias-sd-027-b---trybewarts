@@ -1,15 +1,19 @@
 const checkButton = document.getElementById('agreement');
 const buttonSubmit =  document.getElementById('submit-btn');
 
-function validLogin () {
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
-    if (email.innerText === 'tryber@teste.com' && password.innerText === '123456') {
-        alert = '"Olá, Tryber!'
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const login = document.getElementById('login');
+login.addEventListener('click', function (event) {
+    console.log(email)
+    event.preventDefault();
+    if (email.value === 'tryber@teste.com' && password.value === '123456') {
+        alert('Olá, Tryber!')  
     }else {
-        alert = 'Email ou senha inválidos'
+        alert('Email ou senha inválidos.')
     }
-} validLogin ();
+})
+
 
 checkButton.addEventListener('click', () => {
  if (checkButton.checked) {
@@ -18,3 +22,5 @@ checkButton.addEventListener('click', () => {
   buttonSubmit.setAttribute('disabled', true)
  };
 })
+
+
