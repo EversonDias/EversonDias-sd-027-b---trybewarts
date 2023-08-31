@@ -39,7 +39,7 @@ Para acessar e executar este projeto, siga os passos abaixo:
 2. Clone o Projeto
 
 ```bash
-git clone https://github.com/EversonDias/Project_Trybe_HTML_Bootstrap_JavaScript_TrybeWarts.git TrybeWarts
+git clone https://github.com/EversonDias/Trybe_Warts_with_HTML_Bootstrap_JavaScript.git TrybeWarts
 ```
 
 3. Entre no projeto
